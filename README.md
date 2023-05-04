@@ -7,7 +7,6 @@ Will send more than one request if the user inputs more than 100 maps, so it won
 
 don't ask for more maps than your ranked plays (it will return a bad response (400))
 
-# Other-Updates
-Make for beat leader
+Oh, and no it dosn't do beat leader as its already built into the beat leader website
 
-Other playlists (don't know what they will be yet)
+Something like this probably already exists, but I decided I would make this for fun :)
