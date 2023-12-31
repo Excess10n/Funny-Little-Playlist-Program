@@ -13,7 +13,7 @@ def menu(exist):
         print("\t- 4: Snipe Bela")
         print("\t- 5: Quit")
         if (not exist):
-            print("User data hasn't been set, please select 2")
+            print("User data hasn't been set, please select 3")
         x = input("Select -> ")
         print()
         if x == "1":
