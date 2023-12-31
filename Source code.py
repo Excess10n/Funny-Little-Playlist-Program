@@ -21,7 +21,7 @@ def menu(exist):
         elif x == "2":
             top_ranked()
         elif x == "3":
-            set_data()
+            exist = set_data()
         elif x == "4":
             bela()
         elif x == "5":
@@ -63,6 +63,13 @@ def set_data():
         userData["directory"] = x
         print("Set directory to: " + x)
     print()
+    if userData["userID"] == None or userData["directory"] == None:
+        return False
+    else:
+        file = open("UserData.JSON", "w")
+        json.dump(userData, file)
+        file.close()
+        return True
         
 def snipe():
     print("--- Get maps for snipes ---")
@@ -77,6 +84,7 @@ def snipe():
             x = input("Input ID or name of the sniper -> ")
         if x == "":
             id1 = userData["userID"]
+            print("Set sniper id to: " + str(id1))
             loop = False
         else:
             try:
